@@ -1,0 +1,370 @@
+
+/* Variable segment   */
+:root {
+    --primary-color: #0A3871;
+    --secondary-color: #86921b;
+    --background-color: #F3F5FC;
+    --text-color: #fff;
+    --colorHover: #0A3871;
+    --boton-color: #0A3871;
+    --padding: 10px;
+    --margin: 10px;
+    --heading-font-size: 24px;
+    --paragraph-font-size: 10px;
+    --button-font-size: 16px;
+    --button-padding: 10px 20px;
+    --button-border-radius: 24px;
+    --fuente-inter: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--fuente-inter);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding);
+ }  
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: var(--padding);
+}
+
+.logo {
+    padding-top: 40px;
+    margin-left: 40px;
+    width: auto;
+    height: auto;
+
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    padding: var(--padding);
+    background-color: var(--background-color);
+    column-gap: 80px;
+}
+
+.entrada{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    padding-top: 80px;
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    margin-left: 0px;   
+    position: relative;
+    
+}
+
+.entrada__textarea{
+    width: auto;
+    height: 80%;
+    min-height: 100px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    word-wrap: break-word;
+    font-size: 2rem;
+    border: none;
+}
+::placeholder{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px #0A3871;
+    width: 100%;
+    height: 48px;
+    border: none;
+}
+.entrada__textarea:focus{
+    outline: none;
+} 
+   
+.entrada__informativa{
+    width: 250px;
+    height: 20px;
+    font-size: 2rem;
+    margin-left: 0px;
+    background-image: url('./images/letrasminusculas.png');
+    background-repeat: no-repeat;
+    position: absoute;
+    top: 538px;
+}
+
+.entrada__grupoboton{
+    width: 100%;
+    height: 67px;   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+}
+
+button {
+    padding: var(--button-padding);
+    background-color: var(--background-color);
+    color: var(--boton-color);
+    border: 0.1rem solid var(--boton-color);
+    border-radius: var(--button-border-radius);
+    font-size: 2rem;
+    cursor: pointer;
+    width: 50%;
+    height: 100%;
+    align-items: center;     
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--boton-color);
+    color: var(--background-color);
+    border: 2px solid var(--boton-color);
+}
+
+.salida {
+    width: 100%;
+    max-width: 400px;
+    height: 708px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 1em 1em rgba(0, 0, 0.1, 0.1);
+    margin-top: 0px;
+    margin-left: 0px;
+    border-radius: 24px;
+    position: relative;
+}
+
+.salida__textarea {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    color: var(--primary-color);
+    background-color: white;
+    background-image: url('./images/1.png');
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
+    border: none;
+    border-radius: 24px;
+    text-transform: lowercase;
+    word-wrap: break-word;
+    font-size: 2rem;
+    box-sizing: border-box;
+    padding: 10px;
+    
+}
+.salida__textarea:focus{
+    outline: none;
+}
+
+.salida__boton {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: var(--boton-color);
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    border: 0.1rem solid var(--boton-color);
+    border-radius: var(--button-border-radius);
+    font-size: 2rem;
+    width: 50%;
+    height: 67px;
+}
+.salida__boton:hover {
+    cursor: pointer;
+    background-color: white;
+    color: var(--boton-color);
+    border: 2px solid #0000FF;
+}
+
+h6{
+    margin: var(--margin);
+    color: var(--secondary-color);
+    font-weight: 50%;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    padding: 20px;
+}
+
+.piePagina {
+    font-family: var(--fuente-inter);
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    align-items: center;
+    font-size: 1rem;
+}
+
+
+/* Responsive segment for tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 64px;
+    }
+    .logo {
+        max-width: 80px;
+    }
+
+    .entrada {
+        display: flex; /* Añadir flexbox a .salida */
+        flex-direction: column; /* Asegurar que los elementos hijos se dispongan en columna */
+        justify-content: center;
+ 
+        max-width: 100%;
+        height: auto; /* auto Ajuste para permitir el crecimiento dinámico del textarea */
+        margin-left: 1px;
+    }
+
+
+    .entrada__textarea, .salida__textarea {
+        font-size: 2rem;
+        flex-grow: 1; /* Permitir que el textarea crezca para llenar el espacio disponible */
+        resize: vertical; /* Permitir el redimensionamiento vertical del textarea */
+        overflow: hidden; /* Ocultar el overflow para evitar barras de desplazamiento innecesarias */
+    }
+
+    .entrada__informativa {
+        font-size: 1rem;
+        top: auto;
+    }
+
+    button {
+        font-size: 1.4rem;
+    }
+
+    .salida {
+        display: flex; /* Añadir flexbox a .salida */
+        flex-direction: column; /* Asegurar que los elementos hijos se dispongan en columna */
+        justify-content: center;
+        align-items: center;
+
+        max-width: 100%;
+        min-height: 200px;
+        height: auto; /* auto Ajuste para permitir el crecimiento dinámico del textarea */
+
+        margin-left: 0;
+        flex-grow: 1;
+        resize: vertical;
+        overflow: hidden;
+    }
+
+    .salida__textarea {
+        width: 100%;
+        max-width: 100%;
+        min-height: 100%; /*auto; */
+        height: auto;
+
+        background-image: url('./images/Nohaymensaje.png');
+        flex-grow: 1; /* Permitir que el textarea crezca para llenar el espacio disponible */
+        resize: vertical; /* Permitir el redimensionamiento vertical del textarea */
+        overflow: hidden; /* Ocultar el overflow para evitar barras de desplazamiento innecesarias */
+    }    
+
+    .salida__boton {
+        margin-top: 10px;
+/*        align-self: flex-start; /* Alinea el botón al inicio del contenedor flex */
+        align-items: center;
+        
+    }
+}
+
+
+/* Responsive segment for mobile */
+@media only screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:64px;
+    }
+    .logo {
+        max-width: 60px;
+    }
+
+    .entrada__textarea, .salida__textarea {
+        font-size: 2rem;
+    }
+
+    .entrada__informativa {
+        font-size: 0.8rem;
+    }
+
+    .entrada__grupoboton {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        gap: 24px;
+    }
+
+    button {
+        font-size: 1.2rem;
+        
+    }
+    .salida {
+        width: 100%;
+        max-width: 90%;
+        min-height: 250px;
+        height: auto; /* auto Ajuste para permitir el crecimiento dinámico del textarea */
+        margin-left: 0;
+        flex-grow: 1;
+    }
+
+    .salida__textarea {
+        height: auto;
+        background-image: url('./images/Nohaymensaje.png');
+        flex-grow: 1;
+        min-height: 100%; /*auto; */
+        height: auto;
+        resize: vertical;
+        overflow: hidden;
+    }
+
+    .salida__boton {
+        margin-top: 10px;
+        font-size: 1.2rem;
+        height: auto;
+    }
+
+}

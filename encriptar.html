@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final - Ramiro Paniagua - Encriptar</title>
+    <link rel="stylesheet" href="encriptar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>   
+        <img class="logo" src="./images/Logo.png" alt="logo"> 
+    </header>
+    <main>  
+        <section class="entrada">
+            <textarea class="entrada__textarea" id="textoEntrada" placeholder="Ingrese el texto aquí " aria-label="Campo para ingresar el texto original" id="textoEncriptar"></textarea>
+            <h6 class="entrada__informativa" id="textoInformativo"></h6>
+            <div class="entrada__grupoboton">
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="salida">
+            <textarea class="salida__textarea" id="textoSalida" placeholder="" readonly></textarea>
+            <button class="salida__boton" id="botonCopiar">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <p class="piePagina"> © 2024 Ramiro Paniagua</p>
+        </div>  
+    </footer>
+    <script src="encriptar.js"></script>
+</body>
+</html>
